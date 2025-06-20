@@ -17,13 +17,13 @@ Due to handwritten prescriptions and lack of direct communication, pharmacists o
 **Frontend:**  
 - HTML, CSS, JavaScript  
 - Bootstrap  
-- *(React optional)*
+- React 
 
 **Backend:**  
-- Node.js with Express *(or Django if you used it)*
+- Node.js with Express 
 
 **Database:**  
-- MongoDB *(or SQLite/MySQL depending on your use)*
+- MongoDB 
 
 ## 🖥️ How to Run Locally
 
@@ -46,14 +46,14 @@ node index.js
 
 3. For Frontend
 # Navigate into the frontend folder from the project root
-cd medisync/client
+cd Medisync/client
 
 # Open the frontend in browser (macOS)
 open index.html
 
 # On Windows
-# start index.html
+start index.html
 
 # On Linux
-# xdg-open index.html
+xdg-open index.html
 
