@@ -32,6 +32,28 @@ Due to handwritten prescriptions and lack of direct communication, pharmacists o
    git clone https://github.com/devangsoni2404/De-project.git
    cd De-project
 
-![alt text](image.png)
 
-![alt text](image-1.png)
+2. For Backend
+# Navigate to the backend folder
+cd MediSync/server
+
+# Install all required Node.js dependencies
+npm install
+
+# Start the server (standard)
+node index.js
+
+
+3. For Frontend
+# Navigate into the frontend folder from the project root
+cd medisync/client
+
+# Open the frontend in browser (macOS)
+open index.html
+
+# On Windows
+# start index.html
+
+# On Linux
+# xdg-open index.html
+
