@@ -13,7 +13,7 @@ export default function Home() {
         </div>
         <div className="nav-links">
           <button className="nav-btn" onClick={() => navigate('/login')}>Login</button>
-          <button className="nav-btn" onClick={() => navigate('/register')}>Register</button>
+          <button className="nav-btn reg" onClick={() => navigate('/register')}>Register</button>
         </div>
       </nav>
 
