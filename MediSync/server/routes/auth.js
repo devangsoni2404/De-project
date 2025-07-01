@@ -4,7 +4,7 @@ const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
 const router = express.Router();
 
-// ✅ Middleware for authenticating JWT
+// Middleware for authenticating JWT
 const authenticateToken = (req, res, next) => {
   const authHeader = req.headers['authorization'];
   const token = authHeader && authHeader.split(' ')[1]; // Bearer <token>
@@ -21,7 +21,7 @@ const authenticateToken = (req, res, next) => {
   });
 };
 
-// ✅ Registration route
+// Registration route
 router.post('/register', async (req, res) => {
   const { name, email, password, role } = req.body;
   const hashed = await bcrypt.hash(password, 10);
@@ -30,7 +30,7 @@ router.post('/register', async (req, res) => {
   res.sendStatus(201);
 });
 
-// ✅ Login route
+// Login route
 router.post('/login', async (req, res) => {
   const { email, password } = req.body;
   const user = await User.findOne({ email });
@@ -41,7 +41,7 @@ router.post('/login', async (req, res) => {
   res.json({ token, role: user.role });
 });
 
-// ✅ Example protected route
+//  Example protected route
 router.get('/protected', authenticateToken, (req, res) => {
   res.json({ message: 'This is a protected route', user: req.user });
 });
